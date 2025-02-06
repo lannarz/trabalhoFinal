@@ -8,5 +8,5 @@ Explicação das rotas disponíveis e exemplos de requisições: ----->
 router.get('/', listarLivros): Get na url http://localhost:3333/livros/ lista todos os livros;----->
 router.post('/', addLivro): Post na url http://localhost:3333/livros/ { "nome": "Mentirosos", "autor": "Element. Lockhart", "editora": "Seguinte"} adiciona um livro;----->
 router.get('/:id', buscarLivroId): Get na url http://localhost:3333/livros/67a369ed1b1b997e3fca4bc9 busca um livro pelo seu ID;----->
-router.put('/:id', atualizarLivro): Put na url http://localhost:3333/livros/67a369ed1b1b997e3fca4bc9 atualiza um livro pelo seu ID;----->
+router.put('/:id', atualizarLivro): Put na url http://localhost:3333/livros/67a369ed1b1b997e3fca4bc9 { "nome": "Mentirosos Atualizados"} atualiza um livro pelo seu ID;----->
 router.delete('/:id', excluirLivro): Delete na url http://localhost:3333/livros/67a369ed1b1b997e3fca4bc9 exclui um livro pelo seu ID
