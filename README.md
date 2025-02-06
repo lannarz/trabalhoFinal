@@ -2,11 +2,11 @@ Descrição do projeto:
 Meu trabalho é uma API para o gerencimento de livros (de uma biblioteca, por exemplo) e nele é possível inserir, listar, buscar, atualizar e excluir livros em um banco de dados (utilizei o MongoDB).
 
 Instruções para rodar a aplicação:
-Abra o terminal e digite o comando "npm i -y", depois execute o servidor através do comando "npm start" e por fim verifique se o MongoDB está rodando na porta "mongosh:localhost:27017" 
+Abra o terminal e digite o comando "npm i -y", depois execute o servidor através do comando "npm start" e verifique se no Insomnia (ou app que estiver utilizando) está rodando na porta "http://localhost:3333/livros/" 
 
-Explicação das rotas disponíveis e exemplos de requisições:
-router.get('/', listarLivros): lista todos os livros;
-router.post('/', addLivro): adiciona um livro;
-router.get('/:id', buscarLivroId): busca um livro pelo seu ID;
-router.put('/:id', atualizarLivro): atualiza um livro;
-router.delete('/:id', excluirLivro): exclui um livro.
+Explicação das rotas disponíveis e exemplos de requisições: ----->
+router.get('/', listarLivros): Get na url http://localhost:3333/livros/ lista todos os livros;----->
+router.post('/', addLivro): Post na url http://localhost:3333/livros/ { "nome": "Mentirosos", "autor": "Element. Lockhart", "editora": "Seguinte"} adiciona um livro;----->
+router.get('/:id', buscarLivroId): Get na url http://localhost:3333/livros/67a369ed1b1b997e3fca4bc9 busca um livro pelo seu ID;----->
+router.put('/:id', atualizarLivro): Put na url http://localhost:3333/livros/67a369ed1b1b997e3fca4bc9 atualiza um livro pelo seu ID;----->
+router.delete('/:id', excluirLivro): Put na url http://localhost:3333/livros/67a369ed1b1b997e3fca4bc9 exclui um livro pelo seu ID
